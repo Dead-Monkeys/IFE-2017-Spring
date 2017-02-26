@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>零基础HTML编码_作业</title>
+	<meta name="Keywords" content="百度,前端,技术,学院,IFE,小薇,零基础,HTML,任务,作业" />
+	<meta name="description" content="百度前端技术学院:零基础HTML编码(任务)" />
+</head>
+<body>
+	<!-- 页首 -->
+	<h1>网站一级标题</h1>
+	<ul>
+		<li><a href="">导航链接一</a></li>
+		<li><a href="">导航链接二</a></li>
+		<li><a href="">导航链接三</a></li>
+		<li><a href="">导航链接四</a></li>
+	</ul>
+	<!-- 网页内容 -->
+	<!-- 第一篇文章 -->
+	<h2>文章一级标题</h2>
+	<h3>文章二级标题</h3>
+	<h3><span>文章作者</span> <span>文章发表时间</span></h3>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" alt="前往百度前端学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+	<p><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></p>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" alt="前往百度前端学院" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+	<!-- 第二篇文章 -->
+	<h2>另一篇文章一级标题</h2>
+	<h3>文章二级标题</h3>
+	<h3><span>文章作者</span> <span>文章发表时间</span></h3>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" alt="前往百度前端学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+	<p><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></p>
+	<ul>
+		<li>列表项目一</li>
+		<li>列表项目二</li>
+		<li>列表项目三</li>
+	</ul>
+	<p><span>图片</span></p>
+	<ul>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+		<li><span>好看的图片</span><img src="./img/daziji.jpg" alt="假装你看到了一个纯黄金造的复古打字机（图片路径假设就是这个）。" /></li>
+	</ul>
+	<!-- 第三篇文章 -->
+	<h2>最后一篇文章一级标题</h2>
+	<h3>文章二级标题</h3>
+	<h3><span>文章作者</span> <span>文章发表时间</span></h3>
+	<ol>
+		<li>排名1</li>
+		<li>排名2</li>
+		<li>排名3</li>
+	</ol>
+	<p>下面是一个表格，给表格加了一个border=&quot1&quot好让你看出是一个表格</p>
+	<table border="1">
+		<tr>
+			<th>表头</th>
+			<th>表头</th>
+			<th>表头</th>
+		</tr>
+		<tr>
+			<td>表内容单元格</td>
+			<td>表内容单元格</td>
+			<td><a href="#" target="_blank">操作</a></td>
+		</tr>
+		<tr>
+			<td>表内容单元格</td>
+			<td>表内容单元格</td>
+			<td><a href="#" target="_blank">操作</a></td>
+		</tr>
+		<tr>
+			<td>表内容单元格</td>
+			<td>表内容单元格</td>
+			<td><a href="#" target="_blank">操作</a></td>
+		</tr>
+		<tr>
+			<td>表内容单元格</td>
+			<td>表内容单元格</td>
+			<td><a href="#" target="_blank">操作</a></td>
+		</tr>
+		<tr>
+			<td>总计</td>
+			<td colspan="2">1000</td>
+		</tr>
+	</table>
+	<!-- 侧栏 -->
+	<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+	<h3>侧栏注册窗口标题</h3>
+	<form action="后台服务器文件名(如：1.php)" method="post">
+		请输入邮箱地址：<input type="email" name="email" placeholder="这是一个文本输入框" />
+		<br/><br/>
+		邮箱地址请按要求格式输入
+		<br/><br/>
+		请输入密码：<input type="password" name="pass" placeholder="这是一个文本输入框" />
+		请重复输入密码：<input type="password" placeholder="这是一个文本输入框" />
+		<br/><br/>
+		密码请为6-16位英文数字
+		<br/><br/>
+		性别：
+		<input type="radio" name="gender" value="male" checked="checked" />男
+		<input type="radio" name="gender" value="female" />女
+		城市：
+		<select>
+			<option selected="selected">北京</option>
+			<option>上海</option>
+			<option>广州</option>
+			<option>深圳</option>
+		</select>
+		爱好：
+		<input type="checkbox" name="hobby" value="sport" />运动
+		<input type="checkbox" name="hobby" value="art" />艺术
+		<input type="checkbox" name="hobby" value="science" />科学
+		个人描述：
+		<textarea name="yourdiscription" cols="22" rows="2" placeholder="这是一个多行输入框，输入您的个人描述" ></textarea>
+		<input type="submit" name="submit" value="确认提交" />
+	</form>
+	<!-- 页尾 -->
+	<p><span>版权所有&copy;</span></p>
+</body>
+</html>
