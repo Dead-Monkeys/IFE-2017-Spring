@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>零基础HTML编码_作业</title>
+	<meta name="Keywords" content="百度,前端,技术,学院,IFE,小薇,零基础,HTML,CSS,任务,作业" />
+	<meta name="description" content="百度前端技术学院:零基础HTML及CSS编码(任务二)" />
+	<style type=text/css>
+		/*整体样式*/
+		body,div,dl,ul,ol,li,h1,h2,h3,form,input,textarea,p,th,td {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			padding: 0 190px;
+			background-color: #111111;
+		}
+		ul {
+			list-style: none;
+		}
+		.global {
+			width: 1282px;
+			background-color: #DEDEDE;
+		}
+		.lh26 {
+			line-height: 26px;
+		}
+		.lh38 {
+			line-height: 38px;
+		}
+		.lh70 {
+			line-height: 70px;
+		}
+		.fs22 {
+			font-size: 22px;
+		}
+		.fs16 {
+			font-size: 16px;
+		}
+		.fs15 {
+			font-size: 15px;
+		}
+		.fs12 {
+			font-size: 12px;
+		}
+		.fs-heiti {
+			font-style: "黑体";
+		}
+		.fs-songti {
+			font-style: "宋体";
+		}
+		.fw300 {
+			font-weight: 300;
+		}
+		.fw700 {
+			font-weight: 700;
+		}
+		.mgb20 {
+			margin-bottom: 20px;
+		}
+		.mgb17 {
+			margin-bottom: 17px;
+		}
+		.mgb12 {
+			margin-bottom: 12px;
+		}
+		.mgb10 {
+			margin-bottom: 10px;
+		}
+		.indent05 {
+			text-indent: 0.5em;
+		}
+		.indent2 {
+			text-indent: 2em;
+		}
+		.indent20px {
+			text-indent: 20px;
+		}
+		.indent-6000 {
+			text-indent: -6000em;
+		}
+		.bsd84 {
+			box-shadow: 2px 2px 2px #848484;
+		}
+		.tac {
+			text-align: center;
+		}
+		/*页首*/
+		div .header {
+			width: 1280px;
+			height: 60px;
+			background-color: #333333;
+		}
+		div .header .logo {
+			float: left;
+			width: 118px;
+			padding: 10px 0 0 40px;
+		}
+		div .header .nav {
+			float: right;
+			width: 320px;
+		}
+		div .header .nav ul {
+			text-align: center;
+		}
+		div .header .nav ul li {
+			float: left;
+			margin-right: 20px;
+		}
+		div .header .nav ul li a {
+			font-size: 12px;
+			color: white;
+			text-decoration: none;
+			line-height: 60px;
+		}
+		div .header .nav .last a { 
+			color: gray;
+		}
+		/*网页内容*/
+		.content {
+			width: 1242px;
+			padding: 20px;
+		}
+		/*文章1*/
+		.article1 {
+			background-color: #FFFFFF;
+			border: 1px solid #CDCDCD;
+			padding: 36px 20px;
+		}
+		.article1 img {
+			width: 300px;
+			height: 242px;
+		}
+		/*文章2*/
+		.article2 {
+			background-color: #FFFFFF;
+			border: 1px solid #CDCDCD;
+			padding: 36px 20px;
+		}
+		.article2 img {
+			width: 300px;
+			height: 242px;
+		}
+		/*图片*/
+		.photos {
+			background-color: #FFFFFF;
+			border: 1px solid #CDCDCD;
+			padding: 36px 20px;
+		}
+		.photos li {
+			width: 100px;
+			height: 104px;
+			border: 1px solid #CECECE;
+			margin-left: 40px;   
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+		.photos li span {
+			font-style: "黑体";
+		}
+		.photos li img {
+			width: 100px;
+			height: 80px;
+			margin-top: 8px;  
+		}
+		/*文章3*/
+		.article3 {
+			background-color: #FFFFFF;
+			border: 1px solid #CDCDCD;
+			padding: 36px 20px 20px;
+		}
+		.article3 li {
+			margin-left: 40px;
+			margin-bottom: 6px;
+		}
+		.article3 table {
+			width: 1200px;
+			height: 160px;
+			text-align: left;
+			border-collapse: collapse;
+		}
+		.article3 table th, td {
+			border: 1px solid #CCCCCC;
+		}
+		.article3 table th {
+			font-size: 13px;
+			color: #FFFFFF;
+			background-color: #000000;
+		}
+		.article3 table .last {
+			background-color: #CCCCCC;
+		}
+		/*侧边栏*/
+		.sidebar {
+			background-color: #FFFFFF;
+			border: 1px solid #CDCDCD;
+			width: 1180px;
+			padding: 20px;
+			overflow: hidden;
+			_zoom: 1;
+		}
+		.sidebar .caption {
+			height: 38px;
+			border-left: 3px solid #CCCCCC;
+		}
+		.sidebar form {
+			position: relative;
+			height: 398px;
+		}
+		form .email input, form .pass input {
+			width: 128px;
+			height: 22px;
+		}
+		form .email {
+			position: absolute;
+			left: 290px;range;
+		}
+		form .email label {
+			position: absolute;
+			top: 5px;
+		}
+		form .email input {
+			position: absolute;
+			left: 100px;
+		}
+		form .email p {
+			position: relative;
+			left: 100px;
+			top: 33px;
+			color: #990000;
+		}
+		form .pass {
+			position: absolute;
+			left: 290px;
+			top: 66px;
+		}
+		form .pass .pass1 {
+			position: absolute;
+			left: 25px;
+			top: 5px;
+		}
+		form .pass #pass {
+			position: absolute;
+			left: 100px;
+		}
+		form .pass .pass2 {
+			position: absolute;
+			left: 1px;
+			top: 40px;
+		}
+		form .pass #pass_rep {
+			position: absolute;
+			left: 100px;
+			top: 36px;
+		}
+		form .pass p {
+			position: relative;
+			left: 101px;
+			top: 70px;
+			color: #990000;
+		}
+		form .gender {
+			position: absolute;
+			left: 290px;
+			top: 168px;
+			padding-left: 61px;
+		}
+		form .gender .options {
+			position: relative;
+			left: 42px;
+			top: -14px;
+		}
+		form .gender .options input {
+			margin-right: 2px;
+		}
+		form .gender .options label {
+			margin-right: 6px;
+		}
+		form .city {
+			position: absolute;
+			left: 290px;
+			top: 198px;
+			padding-left: 60px;
+		}
+		form .city select {
+			position: absolute;
+			width: 56px;
+			height: 18px;
+			text-indent: 0.3em;
+			left: 100px;
+			top: -2px;
+		}
+		form .hobby {
+			position: absolute;
+			left: 290px;
+			top: 228px;
+			padding-left: 60px;
+		}
+		form .hobby .options {
+			position: relative;
+			left: 44px;
+			top: -14px;
+		}
+		form .hobby .options input {
+			margin-right: 2px;
+		}
+		form .hobby .options label {
+			margin-right: 6px;
+		}
+		form .discription {
+			position: absolute;
+			left: 290px;
+			top: 278px;
+		}
+		form .discription label {
+			position: absolute;
+			left: 36px;
+			top: -20px;
+			width: 65px;
+		}
+		form .discription textarea {
+			position: absolute;
+			left: 100px;
+			top: -17px;
+			width: 55em;
+			height: 6em;
+		}
+		.sidebar form .button input {
+			position: absolute;
+			width: 1178px;
+			height: 38px;
+			border: 1px solid blue;
+			background-color: #3355D0;
+			border-radius: 8px;
+			font-size: 16px;
+			color: white;
+			top: 358px;
+		}
+		/*页尾*/
+		.footer {
+			width: 1280px;
+			height: 70px;
+			text-align: center;
+			color: white;
+			background-color: #000000;	
+		}
+	</style>
+</head>
+<body>
+	<!-- 页面框架 -->
+	<div class="global">
+		<!-- 页首 -->
+		<div class="header">
+			<div class="logo">
+				<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png" alt="LOGO" />
+				<h1 class="indent-6000">百度</h1>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#">导航链接一</a></li>
+					<li><a href="#">导航链接二</a></li>
+					<li><a href="#">导航链接三</a></li>
+					<li class="last"><a href="#">导航链接四</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 网页内容 -->
+		<div class="content">
+			<!-- 第一篇文章 -->
+			<div class="article1 mgb20 bsd84">
+				<h2 class="fs22 fs-heiti lh26 mgb17">文章一级标题</h2>
+				<h3 class="fs16 fs-heiti lh26 mgb12">文章二级标题</h3>
+				<h3 class="fs12 fs-heiti fw300 lh26 mgb12"><span>文章作者</span> <span>文章发表时间</span></h3>
+				<p class="fs15 fs-songti lh26 indent2">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+				<p class="fs15 fs-songti lh26">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+				<p class="fs15 fs-songti lh26 mgb17">这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" alt="前往百度前端学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+				<p class="mgb12"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></p>
+				<p class="fs15 fs-songti lh26 indent2">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+				<p class="fs15 fs-songti lh26">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" alt="前往百度前端学院" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+			</div>
+			<!-- 第二篇文章 -->
+			<div class="article2 mgb20 bsd84">
+				<h2 class="fs22 fs-heiti lh26 mgb17">另一篇文章一级标题</h2>
+				<h3 class="fs16 fs-heiti lh26 mgb12">文章二级标题</h3>
+				<h3 class="fs12 fs-heiti fw300 lh26 mgb12"><span>文章作者</span> <span>文章发表时间</span></h3>
+				<p class="fs15 fs-songti lh26 indent2">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+				<p class="fs15 fs-songti lh26">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+				<p class="fs15 fs-songti lh26 mgb17">这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" alt="前往百度前端学院">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+				<p class="mgb12"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></p>
+				<ul class="fs15 indent20px">
+					<li class="fs-heiti mgb10">列表项目一</li>
+					<li class="fs-heiti mgb10">列表项目二</li>
+					<li class="fs-heiti">列表项目三</li>
+				</ul>
+			</div>
+			<!-- 图片展示 -->
+			<div class="photos mgb20 bsd84">
+				<h2 class="fs22 fs-heiti lh26 mgb17">图片<h2>
+				<ul class="fs12 fs-songti fw300 tac">
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+					<li><span>好看的图片</span><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1877790094,1318916876&fm=23&gp=0.jpg" alt="复古打字机" /></li>
+				</ul>
+			</div>
+			<!-- 第三篇文章 -->
+			<div class="article3 mgb20 bsd84">
+				<h2 class="fs22 fs-heiti lh26 mgb17">最后一篇文章一级标题</h2>
+				<h3 class="fs16 fs-heiti lh26 mgb12">文章二级标题</h3>
+				<h3 class="fs12 fs-heiti fw300 lh26 mgb12"><span>文章作者</span> <span>文章发表时间</span></h3>
+				<ol class="fs15 fs-heiti mgb17">
+					<li>排名1</li>
+					<li>排名2</li>
+					<li>排名3</li>
+				</ol>
+				<p class="fs15 fs-songti lh26">下面是一个表格，我这里给表格加了一个border=&quot1&quot好让你看出是一个表格，你们不用写html时候不需要加</p>
+				<table class="fs12 indent05">
+					<tr>
+						<th>表头</th>
+						<th>表头</th>
+						<th>表头</th>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#" target="_blank">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#" target="_blank">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#" target="_blank">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#" target="_blank">操作</a></td>
+					</tr>
+					<tr class="last fw700">
+						<td>总计</td>
+						<td colspan="2">1000</td>
+					</tr>
+				</table>
+			</div>
+			<!-- 侧栏 -->
+			<div class="sidebar bsd84">
+				<div class="caption lh38 mgb17 indent05">
+					<h2 class="fs16 fs-heiti">这里以后是一个侧栏，这是侧栏的标题</h2>
+				</div>
+				<form class="fs12" action="后台服务器文件名(如：1.php)" method="post">
+					<div class="email">
+						<label for="email">请输入邮箱地址</label>
+						<input type="email" name="email" placeholder="这是一个文本输入框" id="email" />
+						<p>邮箱地址请按要求格式输入</p>
+					</div>
+					<div class="pass">
+						<label class="pass1" for="pass">请输入密码</label>
+						<input type="password" name="pass" placeholder="这是一个文本输入框" id="pass" />
+						<label class="pass2" for="pass_rep">请重复输入密码</label>
+						<input type="password" placeholder="这是一个文本输入框" id="pass_rep" />
+						<p>密码请为6-16位英文数字</p>
+					</div>
+					<div class="gender">
+						性别
+						<div class="options">
+							<input type="radio" name="gender" value="male" checked="checked" id="male" /><label for="male">男</label>
+							<input type="radio" name="gender" value="female" id="female" /><label for="female">女</label>
+						</div>
+					</div>
+					<div class="city">
+						<label>城市</label>
+						<select>
+							<option selected="selected">北京</option>
+							<option>上海</option>
+							<option>广州</option>
+							<option>深圳</option>
+						</select>
+					</div>
+					<div class="hobby">
+						爱好
+						<div class="options">
+							<input type="checkbox" name="hobby" value="sport" id="sport" /><label for="sport">运动</label>
+							<input type="checkbox" name="hobby" value="art" id="art" /><label for="art">艺术</label>
+							<input type="checkbox" name="hobby" value="science" id="science" /><label for="science">科学</label>
+						</div>
+					</div>
+					<div class="discription">
+						<label for="disc">个人描述</label>
+						<textarea name="yourdiscription" placeholder="这是一个多行输入框，输入您的个人描述" id="disc"></textarea>
+					</div>
+					<div class="button">
+						<input type="submit" name="submit" value="确认提交" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- 页尾 -->
+		<div class="footer">
+			<p class="fs12 fs-songti lh70">版权所有&copy;</p>
+		</div>
+	</div>
+</body>
+</html>
