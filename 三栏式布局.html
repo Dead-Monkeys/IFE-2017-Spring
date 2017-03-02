@@ -12,7 +12,7 @@
 			padding: 0;
 		}
 		.global {
-			width: 1600px;
+			/*width: 1600px;*/
 			background-color: #EEEEEE;
 			overflow: hidden;
 			_zoom: 1;
@@ -45,11 +45,8 @@
 		/*左栏：团队LOGO*/
 		.logo {
 			float: left;
-			position: relative;
-			width: 198px;
-			margin-right: 20px;
-			overflow: hidden;
-			_zoom: 1;
+			width: 160px;
+			margin-left: -100%;
 		}
 		.logo .photo_team {
 			float: left;
@@ -57,19 +54,21 @@
 		}
 		.logo h1 .kj {
 			float: left;
-			font: 32px "微软雅黑";
+			font: 22px "微软雅黑";
 		}
 		.logo h1 .xdh {
 			float: left;
-			font: 32px "微软雅黑";
+			font: 22px "微软雅黑";
 		}
 		/*中栏：内容*/
 		.content {
 			float: left;
-			width: 1150px;
+		}
+		.content .article {
+			margin: 0px 140px 0 220px;
 		}
 		.content .article h2 {
-			color: #555555;
+			color: #555555;			
 		}
 		.content .article p {
 			text-indent: 2em;
@@ -79,25 +78,16 @@
 		.sidebar {
 			float: right;
 			width: 80px;
+			margin-left: -200px;
 		}
 	</style>
 </head>
 <body class="bgcFFF pd20">
 	<!-- 全局框架 -->
 	<div class="global bor1 pd20">
-		<!-- 左栏：团队LOGO -->		
-		<div class="logo bgcFFF bor1 pd20">
-			<div class="photo_team box80 bor1">
-				<img src="http://h.hiphotos.baidu.com/exp/w=500/sign=008ab8173dfae6cd0cb4ab613fb20f9e/3812b31bb051f81911b95a6ad2b44aed2e73e776.jpg" alt="为了部落" class="box80" />
-			</div>
-			<h1>
-				<span class="kj">枯竭</span>
-				<span class="xdh">兄弟会</span>
-			</h1>
-		</div>
 		<!-- 中栏：内容 -->
-		<div class="content bgcFFF bor1  fs15 lh30 pd20">
-			<div class="article fs15 lh30">
+		<div class="content fs15 lh30">
+			<div class="article bor1 bgcFFF pd20">
 				<h2 class="mgb20">关于&lt;枯竭兄弟会&gt;的介绍</h2>
 				<p>
 					在开始介绍之前，让我们先来了解下魔兽世界的历史背景，没错，鼎鼎大名的枯竭兄弟会就是诞生于这个波澜壮阔的大时代。
@@ -122,6 +112,16 @@
 				</p>
 			</div>
 		</div>
+		<!-- 左栏：团队LOGO -->		
+		<div class="logo bgcFFF bor1 pd20">
+			<div class="photo_team box80 bor1">
+				<img src="http://h.hiphotos.baidu.com/exp/w=500/sign=008ab8173dfae6cd0cb4ab613fb20f9e/3812b31bb051f81911b95a6ad2b44aed2e73e776.jpg" alt="为了部落" class="box80" />
+			</div>
+			<h1>
+				<span class="kj">枯竭</span>
+				<span class="xdh">兄弟会</span>
+			</h1>
+		</div>		
 		<!-- 右栏：风采展示 -->
 		<div class="sidebar bgcFFF bor1 pd20">
 			<ul class="photo_member">
