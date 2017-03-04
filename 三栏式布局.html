@@ -5,36 +5,25 @@
 	<title>三栏式布局（任务三）</title>
 	<meta name="Keywords" content="百度,前端,技术,学院,IFE,小薇,零基础,HTML,CSS,三栏式,布局,任务,作业">
 	<meta name="discription" content="百度前端技术学院:三栏式布局(任务三)">
-	<style type="text/css">
+	<style tpye="text/css">
 		/*全局样式*/
 		body,div,ul,li,p,span,h1,h2 {
 			margin: 0;
 			padding: 0;
 		}
 		.global {
-			/*width: 1600px;*/
-			background-color: #EEEEEE;
 			overflow: hidden;
 			_zoom: 1;
 		}
 		ul {
 			list-style: none;
 		}
-		.bgcFFF {
-			background-color: #FFFFFF;
-		}
-		.box80 {
+		img {
 			width: 80px;
 			height: 80px;
 		}
-		.bor1 {
-			border: 1px solid #999999;
-		}
-		.fs15 {
-			font-size: 15px;
-		}
-		.lh30 {
-			line-height: 30px;
+		.bd999 {
+			border: 1px solid #999;
 		}
 		.mgb20 {
 			margin-bottom: 20px;
@@ -42,53 +31,88 @@
 		.pd20 {
 			padding: 20px;
 		}
-		/*左栏：团队LOGO*/
+		/*左边：LOGO*/
 		.logo {
 			float: left;
 			width: 160px;
-			margin-left: -100%;
 		}
-		.logo .photo_team {
+		.logo img {
 			float: left;
 			margin-right: 10px;
 		}
+		.logo h1 {
+			font: 22px "Arial","Microsoft YaHei","SimSun";
+		}
 		.logo h1 .kj {
 			float: left;
-			font: 22px "微软雅黑";
 		}
 		.logo h1 .xdh {
 			float: left;
-			font: 22px "微软雅黑";
 		}
-		/*中栏：内容*/
-		.content {
-			float: left;
-		}
-		.content .article {
-			margin: 0px 140px 0 220px;
-		}
-		.content .article h2 {
-			color: #555555;			
-		}
-		.content .article p {
-			text-indent: 2em;
-			color: #111111;
-		}
-		/*右栏：风采展示*/
+		/*右边：侧栏*/
 		.sidebar {
 			float: right;
 			width: 80px;
-			margin-left: -200px;
+		}
+		.sidebar ul li {
+			width: 80px;
+			height: 80px;
+		}
+		/*中间：内容*/
+		.content {
+			margin: 0 140px 0 220px;
+		}
+		.content h2 {
+			color: #666;
+		}
+		.content p {
+			font: 16px/26px "Arial","Microsoft YaHei","SimSun";
+			color: #111;
+			text-indent: 2em;
+			line-height: 26px;
+			margin-bottom: 10px;
 		}
 	</style>
 </head>
-<body class="bgcFFF pd20">
-	<!-- 全局框架 -->
-	<div class="global bor1 pd20">
-		<!-- 中栏：内容 -->
-		<div class="content fs15 lh30">
-			<div class="article bor1 bgcFFF pd20">
-				<h2 class="mgb20">关于&lt;枯竭兄弟会&gt;的介绍</h2>
+<body class="pd20">
+	<div class="global bd999 pd20">
+		<!-- 左边：LOGO -->
+		<div class="logo bd999 pd20">
+			<img src="http://h.hiphotos.baidu.com/exp/w=500/sign=008ab8173dfae6cd0cb4ab613fb20f9e/3812b31bb051f81911b95a6ad2b44aed2e73e776.jpg" alt="为了部落" />
+			<h1>
+				<span class="kj">枯竭</span>
+				<span class="xdh">兄弟会</span>
+			</h1>
+		</div>
+		<!-- 右边：侧栏 -->
+		<div class="sidebar bd999 pd20">
+			<ul>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455203095&amp;di=0943f5c747cc279ef44900d6d2a155bf&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.ganon365.com%2Fqqimg%2F546901.jpg" alt="薛迪凯" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488458233160&amp;di=c819971e73373b0d3ab16453ee870533&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F3_150312111546_2.jpg" alt="大盗贼" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b10000_10000&amp;sec=1488445513&amp;di=4a038c6b4985ad6822d3c935ea4a2695&amp;src=http://www.qq1234.org/uploads/allimg/150312/0SR62924-12.png" alt="大领主" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455396247&amp;di=2c8daeaba88e69114c298a0597a13967&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F141I31026-6.png" alt="术士" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455819733&amp;di=daeae724b852f3b8f68a33d015d640eb&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F3_150312092651_7.jpg" alt="牧湿" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b10000_10000&amp;sec=1488447219&amp;di=164828bd109d0f64a4dfea8ebe51d65b&amp;src=http://img.jfdown.com/jfdown/201409/gx33w0hwdur.png" alt="短腿战" />
+				</a></li>
+				<li><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455189387&amp;di=67eb0326eae650047e7d6aa80dbe399e&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F141I3K17-9.png" alt="法爷" />
+				</a></li>
+			</ul>
+		</div>
+		<!-- 中部：内容 -->
+		<div class="content bd999 pd20">
+			<h2 class="mgb20">关于&lt;枯竭兄弟会&gt;的介绍</h2>
 				<p>
 					在开始介绍之前，让我们先来了解下魔兽世界的历史背景，没错，鼎鼎大名的枯竭兄弟会就是诞生于这个波澜壮阔的大时代。
 				</p>
@@ -110,43 +134,6 @@
 				<p>
 					正所谓乱世出英雄，于此大时代浪潮之下，立志以枯竭所有“秘境钥匙”，推翻黑暗势力为己任的一批有志青年站了出来，携手共进，枯竭兄弟会自此成立！
 				</p>
-			</div>
-		</div>
-		<!-- 左栏：团队LOGO -->		
-		<div class="logo bgcFFF bor1 pd20">
-			<div class="photo_team box80 bor1">
-				<img src="http://h.hiphotos.baidu.com/exp/w=500/sign=008ab8173dfae6cd0cb4ab613fb20f9e/3812b31bb051f81911b95a6ad2b44aed2e73e776.jpg" alt="为了部落" class="box80" />
-			</div>
-			<h1>
-				<span class="kj">枯竭</span>
-				<span class="xdh">兄弟会</span>
-			</h1>
-		</div>		
-		<!-- 右栏：风采展示 -->
-		<div class="sidebar bgcFFF bor1 pd20">
-			<ul class="photo_member">
-				<li class="member1 box80 mgb20">
-					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455203095&amp;di=0943f5c747cc279ef44900d6d2a155bf&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.ganon365.com%2Fqqimg%2F546901.jpg" alt="薛迪凯" class="box80" />
-				</li>
-				<li class="member2 box80 mgb20">
-					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488458233160&amp;di=c819971e73373b0d3ab16453ee870533&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F3_150312111546_2.jpg" alt="大盗贼" class="box80" />
-				</li>
-				<li class="member3 box80 mgb20">
-					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b10000_10000&amp;sec=1488445513&amp;di=4a038c6b4985ad6822d3c935ea4a2695&amp;src=http://www.qq1234.org/uploads/allimg/150312/0SR62924-12.png" alt="大领主" class="box80" />
-				</li>
-				<li class="member4 box80 mgb20">
-					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455396247&amp;di=2c8daeaba88e69114c298a0597a13967&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F141I31026-6.png" alt="术士" class="box80" />
-				</li>
-				<li class="member5 box80 mgb20">
-					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455819733&amp;di=daeae724b852f3b8f68a33d015d640eb&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F3_150312092651_7.jpg" alt="牧湿" class="box80" />
-				</li>
-				<li class="member6 box80 mgb20">
-					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b10000_10000&amp;sec=1488447219&amp;di=164828bd109d0f64a4dfea8ebe51d65b&amp;src=http://img.jfdown.com/jfdown/201409/gx33w0hwdur.png" alt="短腿战" class="box80" />
-				</li>
-				<li class="member7 box80">
-					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455189387&amp;di=67eb0326eae650047e7d6aa80dbe399e&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F141I3K17-9.png" alt="法爷" class="box80" />
-				</li>
-			</ul>			
 		</div>
 	</div>
 </body>
