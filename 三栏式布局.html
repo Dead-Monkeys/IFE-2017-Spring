@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局（任务三）</title>
+	<meta name="Keywords" content="百度,前端,技术,学院,IFE,小薇,零基础,HTML,CSS,三栏式,布局,任务,作业">
+	<meta name="discription" content="百度前端技术学院:三栏式布局(任务三)">
+	<style tpye="text/css">
+		/*全局样式*/
+		body,div,ul,li,p,span,h1,h2 {
+			margin: 0;
+			padding: 0;
+		}
+		.global {
+			background-color: #EEE;
+			overflow: hidden;
+			_zoom: 1;
+		}
+		ul {
+			list-style: none;
+		}
+		.box80, img, li {
+			width: 80px;
+			height: 80px;
+		}	
+		.bd999 {
+			border: 1px solid #999;
+		}
+		.bgcFFF {
+			background-color: #FFF;
+		}		
+		.flL {
+			float: left;
+		}
+		.mgb20 {
+			margin-bottom: 20px;
+		}
+		.pd20 {
+			padding: 20px;
+		}
+		/*左边：LOGO*/
+		.logo {
+			width: 160px;
+		}
+		.logo img {
+			margin-right: 10px;
+		}
+		.logo h1 {
+			font: 22px "Arial","Microsoft YaHei","SimSun";
+		}
+		/*右边：侧栏*/
+		.sidebar {
+			float: right;
+			width: 80px;
+		}
+		/*中间：内容*/
+		.content {
+			margin: 0 140px 0 220px;
+		}
+		.content h2 {
+			color: #666;
+		}
+		.content p {
+			font: 16px/26px "Arial","Microsoft YaHei","SimSun";
+			color: #111;
+			text-indent: 2em;
+			line-height: 26px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body class="pd20">
+	<div class="global bd999 pd20">
+		<!-- 左边：LOGO -->
+		<div class="logo bd999 bgcFFF flL pd20">
+			<img src="http://h.hiphotos.baidu.com/exp/w=500/sign=008ab8173dfae6cd0cb4ab613fb20f9e/3812b31bb051f81911b95a6ad2b44aed2e73e776.jpg" alt="为了部落" class="flL" />
+			<h1>
+				<span class="kj flL">枯竭</span>
+				<span class="xdh flL">兄弟会</span>
+			</h1>
+		</div>
+		<!-- 右边：侧栏 -->
+		<div class="sidebar bd999 bgcFFF pd20">
+			<ul>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455203095&amp;di=0943f5c747cc279ef44900d6d2a155bf&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.ganon365.com%2Fqqimg%2F546901.jpg" alt="薛迪凯" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488458233160&amp;di=c819971e73373b0d3ab16453ee870533&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F3_150312111546_2.jpg" alt="大盗贼" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b10000_10000&amp;sec=1488445513&amp;di=4a038c6b4985ad6822d3c935ea4a2695&amp;src=http://www.qq1234.org/uploads/allimg/150312/0SR62924-12.png" alt="大领主" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455396247&amp;di=2c8daeaba88e69114c298a0597a13967&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F141I31026-6.png" alt="术士" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455819733&amp;di=daeae724b852f3b8f68a33d015d640eb&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F3_150312092651_7.jpg" alt="牧湿" />
+				</a></li>
+				<li class="mgb20"><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b10000_10000&amp;sec=1488447219&amp;di=164828bd109d0f64a4dfea8ebe51d65b&amp;src=http://img.jfdown.com/jfdown/201409/gx33w0hwdur.png" alt="短腿战" />
+				</a></li>
+				<li><a href="#" alt="" target="_blank">
+					<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488455189387&amp;di=67eb0326eae650047e7d6aa80dbe399e&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.qq1234.org%2Fuploads%2Fallimg%2F150312%2F141I3K17-9.png" alt="法爷" />
+				</a></li>
+			</ul>
+		</div>
+		<!-- 中部：内容 -->
+		<div class="content bd999 bgcFFF pd20">
+			<h2 class="mgb20">关于&lt;枯竭兄弟会&gt;的介绍</h2>
+			<p>
+				在开始介绍之前，让我们先来了解下魔兽世界的历史背景，没错，鼎鼎大名的枯竭兄弟会就是诞生于这个波澜壮阔的大时代。
+			</p>
+			<p>
+				泰坦来到艾泽拉斯，对这个星球进行改造，并封印了一些邪恶的古神和元素领主，并将自己的神力赋予了5个守护巨龙，来守护这个新生的世界。而泰坦一族最强大的战士，萨格拉斯思想堕落，变成恶魔，集结宇宙中的邪恶势力，组成了燃烧军团，四处侵略。
+			</p>
+			<p>
+				泰坦在艾泽拉斯的时候曾经创造了能量源泉，永恒之井。精灵族开始围绕永恒之井繁衍生息。但是滥用魔法导致萨格拉斯注意到了永恒之井的能量，于是开始打算入侵艾泽拉斯。但是由于空间壁障，不能直接穿越过来，就蛊惑精灵女王，让精灵女王以为他是神，诱使精灵女王用永恒之井的能量打开一道传送门，让他好进入艾泽拉斯。但是玛法里奥和泰兰德识破了阴谋，并破坏了召唤仪式，于是发生了永恒之井大爆炸，把整个大陆炸成了2半个分别为东部大陆和卡利姆多。
+			</p>
+			<p>
+				精灵女王为首的一批精灵贵族掉到永恒之井爆炸产生的大漩涡里面，被狂暴的魔法能量扭曲成了娜迦族，其他一批沉迷魔法滥用魔法的高等精灵被玛法里奥等人放逐到了东大陆，这些高等精灵放弃了对月神艾露恩的信仰，改为信仰太阳，创建了精灵王国“奎尔萨拉斯”。而留下来的精灵改称“暗夜精灵”。
+			</p>
+			<p>
+				玛法里奥的弟弟伊利丹在永恒之井爆炸之前偷偷藏了几瓶井水，跑到了海加尔山，在一个湖里倒进了一瓶井水，把那个湖改造成了一个小型的永恒之井，借以汲取渴望的魔法能量。但是很快被他大哥发现并囚禁，然后红龙女王拿了一个橡树种子扔到湖里，长成了第一棵世界之树----诺达希尔。
+			</p>
+			<p>
+				而整个魔兽世界的历史都在这一段历史中延续而来。
+			</p>
+			<p>
+				正所谓乱世出英雄，于此大时代浪潮之下，立志以枯竭所有“秘境钥匙”，推翻黑暗势力为己任的一批有志青年站了出来，携手共进，枯竭兄弟会自此成立！
+			</p>
+		</div>
+	</div>
+</body>
+</html>
