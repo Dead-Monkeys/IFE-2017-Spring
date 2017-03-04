@@ -19,15 +19,18 @@
 		ul {
 			list-style: none;
 		}
-		img {
+		.box80, img, li {
 			width: 80px;
 			height: 80px;
-		}
+		}	
 		.bd999 {
 			border: 1px solid #999;
 		}
 		.bgcFFF {
 			background-color: #FFF;
+		}		
+		.flL {
+			float: left;
 		}
 		.mgb20 {
 			margin-bottom: 20px;
@@ -37,30 +40,18 @@
 		}
 		/*左边：LOGO*/
 		.logo {
-			float: left;
 			width: 160px;
 		}
 		.logo img {
-			float: left;
 			margin-right: 10px;
 		}
 		.logo h1 {
 			font: 22px "Arial","Microsoft YaHei","SimSun";
 		}
-		.logo h1 .kj {
-			float: left;
-		}
-		.logo h1 .xdh {
-			float: left;
-		}
 		/*右边：侧栏*/
 		.sidebar {
 			float: right;
 			width: 80px;
-		}
-		.sidebar ul li {
-			width: 80px;
-			height: 80px;
 		}
 		/*中间：内容*/
 		.content {
@@ -81,11 +72,11 @@
 <body class="pd20">
 	<div class="global bd999 pd20">
 		<!-- 左边：LOGO -->
-		<div class="logo bd999 bgcFFF pd20">
-			<img src="http://h.hiphotos.baidu.com/exp/w=500/sign=008ab8173dfae6cd0cb4ab613fb20f9e/3812b31bb051f81911b95a6ad2b44aed2e73e776.jpg" alt="为了部落" />
+		<div class="logo bd999 bgcFFF flL pd20">
+			<img src="http://h.hiphotos.baidu.com/exp/w=500/sign=008ab8173dfae6cd0cb4ab613fb20f9e/3812b31bb051f81911b95a6ad2b44aed2e73e776.jpg" alt="为了部落" class="flL" />
 			<h1>
-				<span class="kj">枯竭</span>
-				<span class="xdh">兄弟会</span>
+				<span class="kj flL">枯竭</span>
+				<span class="xdh flL">兄弟会</span>
 			</h1>
 		</div>
 		<!-- 右边：侧栏 -->
