@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 1.6: 通过HTML及CSS模拟报纸排版</title>
+	<meta name="Keywords" content="百度,前端,技术,学院,IFE,小薇,零基础,HTML,CSS,定位,居中,模拟,报纸,排版,任务,作业" />
+	<meta name="discription" content="百度前端技术学院:通过HTML及CSS模拟报纸排版(Task_1_6)" />
+	<style type="text/css">
+		/*全局样式*/
+		body,div,ul,ol,dl,li,h1,h2,h3,h4,p,a {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #000;
+		}
+		.inner_c {
+			width: 892px;
+			height: 1386px;
+			margin: 0 auto;
+			padding: 0 44px;
+			background-color: #ffffff;
+		}
+		ul {
+			list-style: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		div.cl {
+			clear: both;
+		}
+		/*页眉*/
+		.header {
+			height: 61px;
+			border-bottom: 2px solid #938e8c;
+		}
+		.header .logo {
+			float: left;
+			width: 102px;
+			background-color: #d45c5b;
+			padding: 39px 0 0 8px;
+		}
+		.header .logo a {
+			float: left;
+			color: #ffffff;
+		}
+		.header .logo a span {
+			float: left;
+			width: 0;
+			height: 0;
+			text-indent: -9999em;
+		}
+		.header .date {
+			float: right;
+			padding: 39px 1px 0 0;
+			color: #d45d5c;
+		}
+		.header .logo a , .header .date {
+			font: 12px "黑体";
+			line-height: 22px;
+		}
+		/*隔墙1*/
+		.gq1 {
+			height: 34px;
+		}
+		/*Banner*/
+		 .banner .left {
+			float: left;
+			width: 641px;
+			height: 301px;
+			background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489491264268&di=4da6980b348b87711ceea0aa07587b58&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd043ad4bd11373f0354d6f4fa60f4bfbfaed04eb.jpg) no-repeat center center;
+		}
+		.banner .left .lj1 , .banner .left .lj2 {
+			width: 191px;
+			height: 301px;			
+		}
+		.banner .left .lj1 {
+			float: left;
+			background-color: rgba(0,255,0,0.5);
+		}
+		.banner .left .lj2 {
+			float: right;
+			background-color: rgba(255,0,0,0.5);
+		}
+		.banner .right {
+			float: right;
+			width: 202px;
+			height: 291px;
+			border-top: 2px solid #cc8091;
+			padding-top: 8px;
+			padding-left: 1px;
+		}
+		.banner .right .box1 {
+			position: relative;
+			height: 242px;
+		}
+		.banner .right .box1 h2 {
+			display: inline-block;
+			height: 28px;
+			font: 17px/28px "Microsoft YaHei";
+			border-bottom: 2px solid #000;
+			margin-right: 10px;
+		}
+		.banner .right .box1 h2.tech {
+			margin-bottom: 7px;
+		}
+		.banner .right .box1 h2 span.sp1 , .banner .right h2 span.sp2 {
+			font-size: 24px;
+		}
+		.banner .right .box1 p {
+			font: 12px/10px "楷体","SimSun";
+			color: #676767;
+		}
+		.banner .right .box1 p.last {
+			position: absolute;
+			font: italic 116px "Microsoft YaHei";
+			color: #75b86b;
+			left: -18px;
+			bottom: 0;
+		}
+		.banner .right .box2 {
+			position: relative;
+			height: 49px;
+			padding-left: 10px;
+		}
+		.banner .right .box2 p {
+			color: #cc8091;
+		}
+		.banner .right .box2 p.p1 {
+			position: absolute;
+			font: 55px/55px "Microsoft YaHei";
+		}
+		.banner .right .box2 p.p2 {
+			position: absolute;
+			font: 21px/21px "Microsoft YaHei";
+			left: 90px;
+			bottom: 12px;
+		}
+		.banner .right .box2 p.p3 {
+			position: absolute;
+			font: 12px/12px "Microsoft YaHei";
+			color: #a7a3a1;
+			left: 90px;
+			bottom: 0;
+		}
+		/*隔墙2*/
+		.gq2 {
+			height: 40px;
+		}
+		/*新闻*/
+		.news {
+			font: 12px/16px "SimSun";
+		}
+		.news ul li {
+			float: left;
+			margin-right: 28px;
+			padding: 2px;
+		}		
+		.news .box1 {
+			width: 228px;
+			height: 167px;
+		}
+		.news .box2 {
+			width: 204px;
+			height: 167px;
+		}
+		.news .box3 {
+			width: 180px;
+			height: 167px;
+		}
+		.news h3 {			
+			margin-bottom: 9px;					
+		}
+		.news h3 a {
+			font: 700 16px/16px "Microsoft YaHei";
+			text-decoration: underline;
+		}
+		.news .box1 h3 a {
+			color: #418c59;
+		}
+		.news .box2 h3 a {
+			color: #d2994f;
+		}
+		.news .box3 h3 a {
+			color: #cc7680;
+		}
+		.news p {
+			color: #767777;
+		}
+		.news .box3 p {
+			margin-bottom: 5px;
+		}
+		.news .box3 ul {
+			margin-top: 24px;			
+		}
+		.news .box3 ul li {
+			font-family:"Microsoft YaHei";
+			margin-bottom: 5px;
+			padding: 0 0 0 4px;
+		}
+		.news .box3 ul li span {
+			font-style: italic;
+			color: #cd4a48;
+			/*设置70%不透明度*/
+			opacity: 0.7;
+		}
+		/*隔墙3*/
+		.gq3 {
+			height: 57px;
+		}
+		/*内容*/
+		.content {
+			margin-bottom: 30px;
+		}
+		.content .article {
+			float: left;
+			width: 415px;
+			height: 630px;			
+		}
+		.content .article .name {
+			position: relative;
+			height: 131px;
+			color: #11456b;
+			padding: 13px 58px 8px 0;			
+			border-bottom: 2px solid #11456b;
+		}
+		.content .article .name .en1, .content .article .name .en2 {
+			font: 700 42px "黑体";
+		}
+		.content .article .name .en1 {			
+			line-height: 42px;
+			text-indent: 136px;
+		}
+		.content .article .name .en2 {
+			line-height: 38px;
+			margin-bottom: 1px;
+		}
+		.content .article .name .en1 span {
+			position: absolute;
+			font-size: 72px;
+			font-style: italic;
+			color: #f5e327;
+			line-height: 50px;
+			text-indent: 0;
+			left: 0;
+			top: -2px;
+		}
+		.content .article .name .zh {			
+			font: 700 33px/50px "黑体";			
+		}
+		.content .article .paragraph {			
+			padding: 23px 0 0 5px;			
+		}
+		.content .article .paragraph p {
+			font: 12px/16px "SimSun";
+			color: #767777;
+			text-indent: 2em;
+		}
+		.content .article .paragraph p.first {
+			text-indent: 0;
+		}
+		.content .article .paragraph p span {
+			float: left;
+			position: relative;
+			width: 70px;
+			height: 80px;
+			font: 70px/66px "Microsoft YaHei";
+			color: #f5e327;
+			left: -5px;
+		}
+		.content .article .paragraph img {
+			float: right;
+			width: 167px;
+			height: 288px;
+			border: 6px solid #fff;
+			border-top-width: 18px;
+			border-bottom-width: 14px;
+			border-left-width: 21px;
+		}
+		.content .sidebar {
+			float: right;
+			width: 458px;
+			height: 630px;
+		}
+		.content .sidebar .top {
+			width: 458px;
+			height: 60px;
+			margin-bottom: 30px;
+			padding-top: 197px;
+			background: url(http://img1.imgtn.bdimg.com/it/u=1678059109,3085878136&fm=23&gp=0.jpg) no-repeat center top;
+		}
+		.content .sidebar .top .tp1 {
+			height: 44px;
+			background-color: rgba(3,3,3,0.3);
+			padding: 8px 0 8px 38px;
+		}
+		.content .sidebar .top .tp1 .tp1_2 {
+			position: relative;
+			height: 44px;
+			border-left: 3px solid #72b16a;
+			padding-left: 8px;			
+		}
+		.content .sidebar .top .tp1 .tp1_2 h3 {
+			font: 26px/44px "Microsoft YaHei";
+			color: #fff;
+		}
+		.content .sidebar .top .tp1 .tp1_2 h4 {
+			position: absolute;
+			font: italic 12px/12px "Microsoft YaHei";
+			color: #72b16a;
+			/*设置字间距140%,但并未起作用*/
+			letter-spacing: 140%;
+			left: 126px;
+			bottom: 8px;
+		}
+		.content .sidebar .btm {
+			width: 458px;
+			height: 318px;
+			background-color: #edecd6;
+		}
+		.content .sidebar .btm .btm1 {
+			height: 120px;
+			padding: 19px 22px 18px 31px;
+		}
+		.content .sidebar .btm .btm1 ul {
+
+		}
+		.content .sidebar .btm .btm1 ul li {
+			height: 40px;
+		}
+		.content .sidebar .btm .btm1 ul li b {
+			float: left;
+			border-style: solid;
+			border-width: 8px;
+			border-color: #edecd6 #edecd6 #10446b #edecd6;
+			margin-right: 7px;
+			padding-top: 8px;
+		}
+		.content .sidebar .btm .btm1 ul li a {
+			float: left;
+			width: 382px;
+			height: 40px;
+			font: 16px "SimSun";
+			line-height: 40px;
+		}
+		.content .sidebar .btm .btm1 ul li a span.l {
+			float: left;
+		}
+		.content .sidebar .btm .btm1 ul li a span.r {
+			float: right;
+			font-style: italic;
+		}
+		.content .sidebar .btm .btm1 ul li a i {
+			display: block;
+			height: 25px;
+			border-bottom: 2px dotted #5A5A5A;			
+		}
+		.content .sidebar .btm .btm1 ul li a i.m1 {
+			margin: 0 40px 0 200px;
+		}
+		.content .sidebar .btm .btm1 ul li a i.m2 {
+			margin: 0 56px 0 140px;
+		}
+		.content .sidebar .btm .btm1 ul li a i.m3 {
+			margin: 0 41px 0 235px;
+		}
+		.content .sidebar .btm .btm2 .box1 {
+			float: left;
+			width: 253px;
+			height: 86px;
+			color: #fff;
+			background-color: #d45c5b;
+			padding: 40px 0 34px 7px;
+		}
+		.content .sidebar .btm .btm2 .box1 .box1_l {
+			float: left;
+			width: 71px;
+			height: 86px;
+			text-align: center;
+		}
+		.content .sidebar .btm .btm2 .box1 .box1_l p {
+			font: 110px/86px "Microsoft YaHei";
+		}
+		.content .sidebar .btm .btm2 .box1 .box1_r {
+			float: left;
+			width: 170px;
+			height: 73px;
+			border-left: 2px solid #fff;
+			padding: 6px 0 7px 10px;
+		}
+		.content .sidebar .btm .btm2 .box1 .box1_r h3 {
+			font: italic 21px/21px "黑体";
+			margin-bottom: 3px;
+		}
+		.content .sidebar .btm .btm2 .box1 .box1_r h3.last {			
+			margin-bottom: 4px;
+		}
+		.content .sidebar .btm .btm2 .box1 .box1_r h4 {
+			font: 12px/12px "黑体";
+		}
+		.content .sidebar .btm .btm2 .box2 {
+			float: right;
+			width: 166px;
+			height: 144px;
+			padding: 16px 16px 0;
+		}
+		.content .sidebar .btm .btm2 .box2 p {
+			position: relative;
+			font: italic 14px/16px "黑体";
+			text-indent: 3em;		
+		}
+		.content .sidebar .btm .btm2 .box2 p span {
+			position: absolute;
+			font: 72px "黑体";
+			color: #d45d5c;	
+			text-indent: 0;			
+		}
+		.content .sidebar .btm .btm2 .box2 p span.first {
+			left: -40px;
+			top: -18px;
+		}
+		.content .sidebar .btm .btm2 .box2 p span.last {
+			right: -40px;
+			bottom: -62px;
+		}
+		/*隔墙4*/
+		.gq4 {
+			height: 30px;
+		}
+		/*页脚*/
+		.footer {
+			position: relative;
+			border-top: 1px solid #938e8c;
+		}
+		.footer p {
+			position: absolute;
+			font: 12px "黑体";
+			color: #d45d5c;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+	<!-- 版心 -->
+	<div class="inner_c">
+		<!-- 页眉 -->
+		<div class="header">
+			<!-- 水印 -->
+			<h1 class="logo">
+				<a href="ife.baidu.com" alt="百度前端技术学院" target="_blank">
+					<span>百度前端技术学院</span>ife.baidu.com
+				</a>
+			</h1>
+			<!-- 日期 -->
+			<p class="date">2016.03</p>
+		</div>
+		<!-- 隔墙1 -->
+		<div class="cl gq1"></div>
+		<!-- LOGO -->
+		<div class="banner">
+			<div class="left">
+				<div class="lj1"></div>
+				<div class="lj2"></div>
+			</div>
+			<div class="right">
+				<div class="box1">
+					<h2>
+						<span class="sp1">A</span>BOUT
+					</h2>
+					<h2 class="tech">
+						<span class="sp2">T</span>ECHNOLOGE
+					</h2>
+					<p>
+						About technologe about technologe
+					</p>
+					<p>
+						about technologe
+					</p>
+					<p class="last">
+						700
+					</p>
+				</div>
+				<div class="box2">
+					<p class="p1">3.2</p>
+					<p class="p2">CSS</p>
+					<p class="p3">CSSSSCCSCCSCSSC</p>
+				</div>
+			</div>
+		</div>
+		<!-- 隔墙2 -->
+		<div class="cl gq2"></div>
+		<!-- 新闻 -->
+		<div class="news">
+			<ul>
+				<li class="box1">
+					<h3>
+						<a href="#">What</a>
+					</h3>
+					<p>
+						前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+					</p>
+				</li>
+				<li class="box2">
+					<h3>
+						<a href="#">When</a>
+					</h3>
+					<p>
+						前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+					</p>
+				</li>
+				<li class="box3">
+					<h3>
+						<a href="#">How</a>
+					</h3>
+					<p>
+						前端前端前端前端
+					</p>
+					<p>
+						前端前端前端前端前端
+					</p>
+					<p>
+						前端前端前端
+					</p>
+					<ul>
+						<li>What-------- <span>40%</span></li>
+						<li>What-------- <span>30%</span></li>
+						<li>What-------- <span>30%</span></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- 隔墙3 -->
+		<div class="cl gq3"></div>
+		<!-- 内容 -->
+		<div class="content">
+			<!-- 文章 -->
+			<div class="article">
+				<div class="name">
+					<h3 class="en1"><span>THE</span> TECHNOLOGE</h3>
+					<h3 class="en2">OF FRONT</h3>
+					<h3 class="zh">前端技术领域</h3>
+				</div>
+				<div class="paragraph">
+					<p class="first">
+						<span>前</span>端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前<img src="http://img5.imgtn.bdimg.com/it/u=1980726584,3274161889&fm=23&gp=0.jpg" alt="图片" target="_blank" />端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+					</p>
+					<p>
+						前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+					</p>
+					<p>
+						前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+					</p>
+				</div>
+			</div>
+			<!-- 资讯列表 -->
+			<div class="sidebar">
+				<div class="top">
+					<div class="tp1">
+						<div class="tp1_2">
+							<h3>前端技术</h3>
+							<h4>前端技术前端技术</h4>
+						</div>
+					</div>
+				</div>
+				<div class="btm">
+					<div class="btm1">
+						<ul>
+							<li>
+								<b></b>
+								<a>
+									<span class="l">前端前端前端前端前端前端</span>
+									<span class="r">前端</span>
+									<i class="m1"></i>
+								</a>
+							</li>
+							<li>
+								<b></b>
+								<a>
+									<span class="l">前端前端前端前端</span>
+									<span class="r">前端前</span>
+									<i class="m2"></i>
+								</a>
+							</li>
+							<li>
+								<b></b>
+								<a>
+									<span class="l">前端前端前端前端前端前端前端</span>
+									<span class="r">前端</span>
+									<i class="m3"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="btm2">
+						<div class="box1">
+							<div class="box1_l">
+								<p>0</p>
+							</div>
+							<div class="box1_r">
+								<h3>ONE TWO</h3>
+								<h3 class="last">THREE FORE FIVE</h3>
+								<h4>hello world hello world</h4>
+								<h4>hello world</h4>
+							</div>
+						</div>
+						<div class="box2">
+							<p>
+								<span class="first">“</span>world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world<span class="last">”</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 隔墙4 -->
+		<div class="cl gq4"></div>
+		<!-- 页脚 -->
+		<div class="footer">
+			<p>ife.baidu.com</p>
+		</div>
+	</div>
+</body>
+</html>
